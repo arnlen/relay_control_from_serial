@@ -21,7 +21,7 @@ void loop() {
 
     if (message == 1 || message == 0) {
       relayState = message;
-      digitalWrite(RELAY, relayState); 
+      digitalWrite(RELAY, relayState);
     }
   }
   delay(1000); // delay in between reads for stability
