@@ -6,6 +6,7 @@
  *
  */
 
+#include <LiquidCrystal.h>
 #include "relay_controller.h"
 #include "lcd_controller.h"
 

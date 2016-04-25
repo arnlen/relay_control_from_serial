@@ -5,6 +5,8 @@
  *
  */
 
+#include <Arduino.h>
+
 const int RELAY = 7;       // relay on pin 7
 boolean relay_state = 0;    // relay state (on / off)
 
