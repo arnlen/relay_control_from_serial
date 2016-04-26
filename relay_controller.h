@@ -14,11 +14,7 @@ void setup_relay() {
   pinMode(RELAY, OUTPUT);
 }
 
-void activate_the_relay() {
-  int message = Serial.read()-'0'; // Remove "0" which is the -48 value
-
-  Serial.println(message);         // Output on serial for debug purpose
-
+void activate_the_relay(message) {
   if (message != -49) {
 
     if (message == 1 || message == 0) {

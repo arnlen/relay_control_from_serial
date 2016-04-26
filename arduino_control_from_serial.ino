@@ -19,8 +19,11 @@ void setup() {
 }
 
 void loop() {
-  display_serial_data();
-  activate_the_relay();
+  int message = Serial.read()-'0'; // Remove "0" which is the -48 value
+  Serial.println(message);         // Output on serial for debug purpose
+
+  display_serial_data(message);
+  activate_the_relay(message);
 
   delay(1000); // wait for 1 second before every loop
 }

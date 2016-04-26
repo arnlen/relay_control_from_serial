@@ -14,14 +14,7 @@ void setup_lcd() {
   lcd.begin(16, 2);
 }
 
-void display_serial_data() {
-  if (Serial.available()) {
-    delay(100);
-
-    lcd.clear();
-
-    while (Serial.available() > 0) {
-      lcd.write(Serial.read());
-    }
-  }
+void display_serial_data(message) {
+  lcd.clear();
+  lcd.write(message);
 }
