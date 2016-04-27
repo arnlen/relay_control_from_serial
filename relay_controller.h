@@ -14,7 +14,7 @@ void setup_relay() {
   pinMode(RELAY, OUTPUT);
 }
 
-void activate_the_relay(int message) {
+void activate_the_relay(String message) {
   if (message != -49) {
 
     if (message == 1 || message == 0) {

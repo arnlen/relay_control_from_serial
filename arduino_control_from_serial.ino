@@ -19,7 +19,7 @@ void setup() {
 }
 
 void loop() {
-  int message = Serial.read()-'0'; // Remove "0" which is the -48 value
+  int message = Serial.readString();
   Serial.println(message);         // Output on serial for debug purpose
 
   display_serial_data(message);
