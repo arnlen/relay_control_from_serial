@@ -15,11 +15,8 @@ void setup_relay() {
 }
 
 void activate_the_relay(String message) {
-  if (message != -49) {
-
-    if (message == 1 || message == 0) {
-      relay_state = message;
-      digitalWrite(RELAY, relay_state); // Write to relay
-    }
+  if (message == "1" || message == "0") {
+    relay_state = message;
+    digitalWrite(RELAY, relay_state); // Write to relay
   }
 }

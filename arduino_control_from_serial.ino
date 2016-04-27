@@ -19,7 +19,7 @@ void setup() {
 }
 
 void loop() {
-  int message = Serial.readString();
+  String message = Serial.readString();
   Serial.println(message);         // Output on serial for debug purpose
 
   display_serial_data(message);

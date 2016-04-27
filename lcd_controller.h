@@ -16,5 +16,5 @@ void setup_lcd() {
 
 void display_serial_data(String message) {
   lcd.clear();
-  lcd.write(message);
+  lcd.print(message);
 }
