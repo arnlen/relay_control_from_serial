@@ -20,10 +20,13 @@ void setup() {
 
 void loop() {
   String message = Serial.readString();
-  Serial.println(message);         // Output on serial for debug purpose
 
-  display_serial_data(message);
-  activate_the_relay(message);
+  if (message != "") {
+    Serial.println(message);         // Output on serial for debug purpose
 
-  delay(1000); // wait for 1 second before every loop
+    display_serial_data(message);
+    activate_the_relay(message);
+
+    delay(1000); // wait for 1 second before every loop
+  }
 }
